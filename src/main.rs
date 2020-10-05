@@ -458,8 +458,12 @@ fn main() {
         65536, None, None);
     writer
         .add_node(sentance!(
-        [word = "草"][element = "Who"][word="的!"]
+        [element ="Who"][word = "是从"][element = "Location"][word="来的."]
     ), 1.8)
+        .add_node(sentance!(
+            [element="AskWho"][word="在"][element ="Time"][element="TranstiveVerb"]
+            [element="Adjective"][word="的"][element="GenericNoun"][icon='?']
+        ), 0.4)
         .add_node(sentance!(
         [word = "建议"][element = "Location"][word="的"][element="Name"]
         [element="Time"][word="就"][element="IntranstiveVerb"][icon='.']
